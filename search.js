@@ -140,7 +140,7 @@ $('#search_btn').click(highlight);//点击search时，执行highlight函数；
      * var html = '<body>&</body>';
      *
      * //output: &lt;body&gt;&amp;&lt;/body&gt;
-     * console.log( UE.utils.unhtml( html ) );
+     * console.log( unhtml( html ) );
      *
      * ```
      */
@@ -162,7 +162,7 @@ function unhtml(str, reg) {
 
 /**
 	* 将str中的转义字符还原成html字符
-	* @see UE.utils.unhtml(String);
+	* @see unhtml(String);
 	* @method html
 	* @param { String } str 需要逆转义的字符串
 	* @return { String } 逆转义后的字符串
@@ -172,7 +172,7 @@ function unhtml(str, reg) {
 	* var str = '&lt;body&gt;&amp;&lt;/body&gt;';
 	*
 	* //output: <body>&</body>
-	* console.log( UE.utils.html( str ) );
+	* console.log( html( str ) );
 	*
 	* ```
 	*/
